@@ -1,3 +1,3 @@
-# engenharia-de-software
+# Software Engineering
 
-Este repositório é um diário publico do meu curso de bacharelado em Engenharia de Software.
+This repository is a public diary of my Software Engineering course.
