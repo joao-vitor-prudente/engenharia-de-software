@@ -1,4 +1,4 @@
-# Propositional Logic
+# Propositional Logic pt 1
 
 ## Definitions
 
