@@ -1,4 +1,4 @@
-# Propositional Logic pt 1
+# Propositional Logic
 
 ## Definitions
 
@@ -129,3 +129,49 @@
 | T | F | T     |
 | F | T | T     |
 | F | F | F     |
+
+## Precedence of Operations
+
+- 1) ¬
+
+- 2) ∧
+
+- 3) ∨, ⊕
+
+- 4) →
+
+- 5) ↔
+
+## Coverse
+
+p → q
+
+q → p
+
+Obs: (p → q ∧ q → p) → (p ↔ q)
+
+## Inverse
+
+p → q
+
+¬ p → ¬ q
+
+## Contra-Positive
+
+p → q
+
+¬ q → ¬ p
+
+## Contradicition
+
+When a proposition is always false
+
+## Tautology
+
+When a proposition is always true
+
+## Logical Equivalence
+
+When two propositions have the same truth table
+
+p and q are logically equivalent if and only if p ↔ q is a tautology
