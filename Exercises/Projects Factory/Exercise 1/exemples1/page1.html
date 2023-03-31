@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>Page 1</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Page 1</h1>
+      <h2>Exemples</h2>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+
+    <article>
+      <pre>
+          <code>
+              #include < stdio.h >
+
+              int main() {
+                  int n, i, sum = 0;
+                  float mean;
+              
+                  printf("Enter the length of the vector: ");
+                  scanf("%d", &n);
+              
+                  int vec[n]; // create vector with length n
+              
+                  printf("Enter %d integers for the vector: \n", n);
+                  for (i = 0; i < n; i++) {
+                      scanf("%d", &vec[i]); // read input and store in vector
+                      sum += vec[i]; // accumulate sum of vector elements
+                  }
+              
+                  mean = (float) sum / n; // calculate arithmetic mean
+              
+                  printf("The arithmetic mean of the vector is: %f\n", mean);
+              
+                  return 0;
+              }
+          </code>
+        </pre>
+    </article>
+
+    <hr>
+
+    <address>
+      <ul>
+        <li><span>Mail: </span><a href="mailto:joao_vitor_corp@gmail.com">joao_vitor_corp@gmail.com</a></li>
+        <li><span>Phone: </span><a href="tel:+55(61)998645645"></a>+55(61)998645645</li>
+      </ul>
+    </address>
+
+    <footer>
+      <p>Privacy Policy Terms</p>
+      <p>© Copyright Joao Vitor Corp 2023 - All rights reserved</p>
+      <p>Developed by Joao Vitor</p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,4 +1,4 @@
-from typing import Any, Optional
+from typing import Any, Optional, Sequence
 
 
 class Node:
@@ -8,10 +8,19 @@ class Node:
 
 
 class LinkedList:
-      def __init__(self: "LinkedList", head: Optional["Node"] = None):
-            self.head = head
+      def __init__(self: "LinkedList", head: Optional[Node] = None):
             self.length = 1 if head is not None else 0
-        
+            self.head = head
+            
+      @classmethod
+      def from_iterable(cls: type["LinkedList"], array: Sequence[Any]) -> "LinkedList":
+            instance = cls()
+            instance.head = Node(array[0])
+            instance.length = 1
+            for value in array[1:]:
+                  instance.append(value)
+            return instance
+            
       def __len__(self: "LinkedList") -> int:
             return self.length
       
@@ -147,6 +156,5 @@ if __name__ == '__main__':
       ll3.append(7)
       ll3.append(8)
       
-      print(ll1 != ll2)
-      print(ll2 != ll3)
-      print(ll1 != ll3)
+      ll4 = LinkedList.from_iterable([2, 3, 4, 5])
+      print(ll4, ll4.length)
