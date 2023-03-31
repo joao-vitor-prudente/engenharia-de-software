@@ -1,6 +1,6 @@
 # Exercício 2
 
-## 1 - Fazer tabelas verdade e classificar proposições
+## 1 - Fazer tabelas verdade ∧ classificar proposições
 
 - A) 
 
@@ -404,25 +404,23 @@ Assumindo X = F
 
 - J) 
 
-X = [(p ∨ q) ∧ (q → r)] → r
+X = [(p ∨ q) ∧ (p → r) ∧ (q → r)] → r
 
 Assumindo X = F
 
-(X = F) → {[(p ∨ q) ∧ (q → r)] = V ∧ r = F}
+(X = F) → {[(p ∨ q) ∧ (p → r) ∧ (q → r)] = V ∧ r = F}
 
-{[(p ∨ q) ∧ (q → r)] = V} → [(p ∨ q = V) ∧ q → r = V]
+{[(p ∨ q) ∧ (p → r) ∧ (q → r)] = V} → [(p ∨ q) = V ∧ (p → r) = V ∧ (q → r) = V]
 
-[(r = F) ∧ (q → r = V)] → (q = F)
+[(p → r) = V ∧ r = F] → (p = F)
 
-[(q = F) ∧ (p ∨ q = V)] → (p = V)
+(p = F ∧ r = V) → (p → r) = F
 
-p = V; q = F; r = F → {[(V ∨ F) ∧ (F → F) ] → F} → (V ∧ V → F)
+(p → r = F) ∧ (p → r = V) → ∃ a | a = V ∧ a = F (Impossível)
 
-(V ∧ V → F) → (V → F = F)
+∴ X = V
 
-∴ X ∈ {V, F}
-
-**Contingência**
+**Tautologia**
 
 ## 3 - Demonstrar equivalência lógica entre proposições
 

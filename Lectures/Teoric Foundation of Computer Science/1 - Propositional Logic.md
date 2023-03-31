@@ -44,7 +44,7 @@
 | F | T | T     |
 | F | F | F     |
 
-- **Implication**: If... then (⇒)
+- **Conditional**: If... then (⇒)
 
 | p | q | p ⇒ q |
 |---|---|-------|
