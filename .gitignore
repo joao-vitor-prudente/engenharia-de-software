@@ -1,6 +1,7 @@
 .vscode
 *.out
 *.pdf
+*.odt
 Documents
 Projects
 Solution.html
