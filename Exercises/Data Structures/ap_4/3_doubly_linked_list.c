@@ -426,7 +426,7 @@ void sort(struct LinkedList *list, int *(*func)(int*, int*))
                   left = &(current->data);
                   right = &(current->next->data);
                   first = func(left, right);
-                  if (first == left)
+                  if (first == right)
                   {
                         temp = current->data;
                         current->data = current->next->data;
